@@ -8,6 +8,7 @@ position: fixed;
 .main{
  position: absolute;
   color: red;
-  left : 50em;
+  left : 30em;
   font-family: 'Roboto', sans-serif;
+  right: 60em;
 }
