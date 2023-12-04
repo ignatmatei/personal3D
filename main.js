@@ -52,10 +52,12 @@ Array(300).fill().forEach(addStar);
 function animate() {
   requestAnimationFrame(animate);
   //make the mesh rotate
-  mesh.rotation.x += 0.01;
+  //mesh.rotation.x += 0.01;
   mesh.rotation.y += 0.01;
+  //mesh.rotation.z += 0.01;
   //update the orbit control
   controls.update(); 
   renderer.render(scene, camera);
+
 }
 animate();
