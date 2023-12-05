@@ -36,9 +36,9 @@ const mesh = new THREE.Mesh(sphere, material1);
 scene.add(mesh);
 const controls = new OrbitControls(camera, renderer.domElement);
 const Loader = new GLTFLoader();
-///add in loader glb file
-Loader.load('3dpea.glb', function(gltf){
+Loader.load('small.glb', function(gltf){
   scene.add(gltf.scene);
+  gltf.scene.position.set(-5,-5,-5);
 });
 function addStar() {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
