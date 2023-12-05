@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
     - run: | 
          npm i
-         npm run build --base=/personal3D/
+         npm run build
     - run: |
           rm docs/index.html
           cp -a dist/. docs/
