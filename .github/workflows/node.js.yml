@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
     - run: | 
          npm i
-         npm run build
+         vite build --base=/personal3D/
     - run: |
           rm docs/index.html
           cp -a dist/. docs/
