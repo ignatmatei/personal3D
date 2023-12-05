@@ -26,5 +26,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm i 
-    - run: npm run build
+    - run: | 
+         npm i
+         npm run build
+    - run: |
+          rm docs/index.html
+          cp -a dist/. docs/
+          ls -lh docs/*
